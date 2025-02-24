@@ -3,12 +3,14 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
+    "dotenvx": "dotenvx",
+    "dev": "dotenvx run -- astro dev",
+    "build": "dotenvx run -- astro build",
+    "preview": "dotenvx run -- astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@dotenvx/dotenvx": "^1.38.2",
     "astro": "^5.3.1"
   }
 }
